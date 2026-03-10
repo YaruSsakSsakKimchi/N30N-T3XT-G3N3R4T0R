@@ -46,7 +46,6 @@
 
 <br><br>
 
-<p>Made with HTML</p>
 
 </body>
 </html>
