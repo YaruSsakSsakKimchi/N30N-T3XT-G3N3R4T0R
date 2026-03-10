@@ -1,29 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <title>Neon Text Generator</title>
-<link rel="stylesheet" href="style.css">
-</head>
 
-<body>
-
-<h1 class="title">⚡ Neon Text Generator ⚡</h1>
-
-<div class="container">
-
-<input type="text" id="textInput" placeholder="Type your text here...">
-
-<button onclick="generateNeon()">Generate</button>
-
-<h2 id="neonOutput">Your Neon Text</h2>
-
-</div>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+<style>
 
 body{
     background:black;
@@ -67,6 +49,27 @@ button{
     0 0 80px #00ffff;
 }
 
+</style>
+
+</head>
+
+
+<body>
+
+<h1 class="title">⚡ Neon Text Generator ⚡</h1>
+
+<div class="container">
+
+<input type="text" id="textInput" placeholder="Type your text here...">
+
+<button onclick="generateNeon()">Generate</button>
+
+<h2 id="neonOutput">Your Neon Text</h2>
+
+</div>
+
+<script>
+
 function generateNeon(){
 
 let text = document.getElementById("textInput").value;
@@ -78,3 +81,9 @@ if(text === ""){
 document.getElementById("neonOutput").innerText = text;
 
 }
+
+</script>
+
+</body>
+
+</html>
